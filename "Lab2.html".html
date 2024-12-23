@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <style>
+    body {
+      background-color: lightblue; 
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, sans-serif;
+    }
+
+    .header {
+      background-color: #D0E7DC; 
+      color: #8D2626; 
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    .navbar {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #284561;
+      display: flex; 
+      justify-content: center; 
+    }
+
+    .navbar li {
+      padding: 15px 20px;
+      color: #EAF58A;
+      cursor: pointer;
+    }
+
+    .navbar li:hover {
+      background-color: #F58AAA; 
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #3B763B;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .dropdown-menu li {
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .dropdown-menu li:hover {
+      background-color: #E9905C;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .content {
+      background-color: #96BBDB;
+      padding: 20px;
+      text-align: center;
+      color:#17324A ;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>My Page</h1>
+    <p>Welcome to my homepage. Explore and enjoy!</p>
+  </div>
+  <nav>
+    <ul class="navbar">
+      <li class="dropdown">Home
+        <ul class="dropdown-menu">
+            <li>Life Story</li>
+            <li>Educational qualifications</li>
+            <li>Personal Information</li>
+        </ul>
+      </li>
+      <li class="dropdown">About
+        <ul class="dropdown-menu">
+            <li>Name</li>
+            <li>School</li>
+            <li>Hobby</li>
+        </ul>
+      </li>
+
+      <li class="dropdown">Services
+        <ul class="dropdown-menu">
+          <li>Web Design</li>
+          <li>Graphic Design</li>
+          <li>Digital Marketing</li>
+        </ul>
+      </li>
+
+      <li class="dropdown">Contact
+        <ul class="dropdown-menu">
+            <li>Email</li>
+            <li>Phone number</li>
+            <li>Fb</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <p>This is my first homepage. I'm learning CSS to create a visually appealing website.</p>
+    <p>Feel free to send me a message: <a href="mailto:113502042@nccu.edu.tw">113502042@nccu.edu.tw</a></p>
+  </div>
+</body>
+</html>
